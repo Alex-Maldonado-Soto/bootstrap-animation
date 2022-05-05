@@ -7,16 +7,35 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="font-awesome/css/all.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <title>Proyect-bootstrap-fotografo</title>
+    <title>Proyect-bootstrap-animation</title>
   </head>
   <body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <style>
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #343434;
+  color: white;
+}
+
+
   .navbar-light .navbar-nav .nav-link:hover {
-    color: #000;
+    color: #ff6200;
   }
+  .navbar-light .navbar-nav .nav-link {
+    color: white;
+}
 
-
+  .bg-orange{
+    color: #ff6200;
+  }
+  .bg-gray{
+    color: #343434;
+  }
   .card {
     background-blend-mode: darken;
     height: 50vh;
@@ -27,7 +46,7 @@
   .text-header {
     text-align: center;
     margin: auto;
-    color: white;
+    color: #fff;
     padding: auto;
   }
   .navbar-collapse {
@@ -47,11 +66,47 @@
     justify-content: center;
     background-color: rgba(70, 70, 70, 0.3);
   }
+
+  .navbar {
+    background-color: #343434;
+  }
+
+  .btn {
+    background-color: #ff6200;
+    color: #fff;
+  }
+  .progress-bar-striped {
+    background-image: linear-gradient(45deg,#ff6200 25%,transparent 25%,transparent 50%,#ff6200 50%, #ff6200 75%,transparent 75%,transparent);
+    background-size: 1rem 1rem;
+  }
+  .progress-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #be4a02;
+    transition: width .6s ease;
+}
+  i{
+    color: #fff;
+  }
+  .circle {
+    color: #ff6200;
+  }
+  .nav li a:hover {
+    color: #ff6200;
+  }
+  .fab, .fa-brands:hover {
+    color: #ff6200;
+}
   </style>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+  <nav class="navbar navbar-expand-sm navbar-light fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
         <img id="img-nav" src="imagenes/quino-al-Ap0q3RobmIU-unsplash.jpg" alt="" width="60" height="40">
@@ -84,7 +139,7 @@
         <div class="text-header align-items-center" id="text-header">
           <h2>Proyecto animaciones</h2>
           <p>En este proyecto experimentare con algunas animaciones de gsap</p>
-          <button type="button" class="btn btn-primary">Repositorio</button>
+          <button type="button" class="btn">Repositorio</button>
         </div>
       </div>
     </div>
@@ -92,7 +147,7 @@
   </section>
 
 <section class="section 2">
-  <div class="container container-2 p-5">
+  <div class="container-xxl container-2 p-5">
     <div class="row">
       <div class="col-md-6">
         <div class="header-content-left">
@@ -100,7 +155,7 @@
         </div>
       </div>
       <div class="col-md-6 m-auto mt-3">
-        <h2 class="about-me-animation">Alex Maldonado</h2>
+        <h2 class="about-me-animation">Nombre</h2>
         <p class="about-me-animation">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus recusandae, autem dolore blanditiis officia praesentium, corrupti molestiae unde qui explicabo nesciunt pariatur amet ut debitis. Facilis officia vitae minus voluptatum!</p>
         <div >
           <span>Interfas de usuario</span>
@@ -118,7 +173,7 @@
           </div>
         </div>
         <div class="button-contact mt-5">
-          <button type="button" class="btn btn-primary">Contactame</button>
+          <button type="button" class="btn">Contactame</button>
         </div>
       </div>
     </div>
@@ -206,7 +261,7 @@
     </div>
     <div class="col-md-12 pt-5">
       <div class="row justify-content-center">
-        <button class="btn btn-primary col-md-12">Enviar</button>
+        <button class="btn col-md-12">Enviar</button>
       </div>
     </div>
   </form>
@@ -218,13 +273,13 @@
     <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
       <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
     </a>
-    <span class="text-muted">Redes sociales del creador</span>
+    <span class="text">Redes sociales del creador</span>
   </div>
 
   <ul class="nav col-md-4 justify-content-end list-unstyled d-flex pe-5 text-align-center">
-    <li class="ms-3"><a class="text-muted pe-3" target="_blank" href="https://twitter.com/Maldexander"><i class="fa-brands fa-twitter"></i></a></li>
-    <li class="ms-3"><a class="text-muted pe-3" target="_blank" href="https://dev.to/alexmaldonadosoto"><i class="fa-brands fa-dev"></i></a></li>
-    <li class="ms-3"><a class="text-muted pe-3" target="_blank" href="https://github.com/Alex-Maldonado-Soto"><i class="fa-brands fa-github"></i></a></li>
+    <li class="ms-3 fs-3 footer"><a class="text-muted pe-3" target="_blank" href="https://twitter.com/Maldexander"><i class="fa-brands fa-twitter"></i></a></li>
+    <li class="ms-3 fs-3 footer"><a class="text-muted pe-3" target="_blank" href="https://dev.to/alexmaldonadosoto"><i class="fa-brands fa-dev"></i></a></li>
+    <li class="ms-3 fs-3 footer"><a class="text-muted pe-3" target="_blank" href="https://github.com/Alex-Maldonado-Soto"><i class="fa-brands fa-github"></i></a></li>
   </ul>
 </footer>
 
